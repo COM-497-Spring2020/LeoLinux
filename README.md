@@ -5,4 +5,6 @@ Our vision for this project is a fully customized Linux operating system built f
 
 There are many different ways we could measure the success of our project. A few of the possibilities that are most important to us include: Is our distro a working, stable build? Do we have unique GUI options to set us apart from other projects? Is the distro practical for a working environment? Are the installation files light enough to allow for older hardware to run effectively? Our team will be answering all of these questions and more as we progress through our project, but the ultimate decision is left to Dr. Manh Van Nguyen of Saint Leo University.
 
-For more information, please read our *Project Proposal* in the *Documentation* folder of this repositorty. Thank you for your interest in *Leo Linux*!
+Additionally, our team ran a survey onm students from *Saint Leo University*, as well as other locations, to determine what kind of operating system would truly be useful to students. The majority of the results are summed up in the **Survey Results** folder of this repository.
+
+For more information, please read our *Project Proposal* in the **Documentation** folder of this repositorty. Thank you for your interest in *Leo Linux*!
