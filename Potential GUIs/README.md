@@ -11,4 +11,4 @@ None of these have been solidified as THE style of GUI that we intend to use, an
 | 1.2 | General GUI Design has been finalized: See file ``2B`` for general design. Specifics to come as more programs, features, and tools are added. |
 
 ## *Leo Linux Logo*
-A general design for the *Leo Linux* logo has been created; see file ``Leo Linux Logo v2.png`` for the icon-style logo. The files ``"Leo Linux Lovo v2.2 CF.png"`` and ``"Leo Linux Logo v2.3 CF.png"`` are variations of the original logo image on different sized solid-black backgrounds. The logo art and design is the result of the work of *Madelyn Eden* and *Pedro Quintao*.
+A general design for the *Leo Linux* logo has been created; see file ``Leo Linux Logo v2.png`` for the icon-style logo. The files ``"Leo Linux Logo v2.2 CF.png"`` and ``"Leo Linux Logo v2.3 CF.png"`` are variations of the original logo image on different sized solid-black backgrounds. The logo art and design is the result of the work of *Madelyn Eden* and *Pedro Quintao*.
