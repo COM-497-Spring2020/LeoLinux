@@ -1,6 +1,5 @@
 # *Leo Linux* Programs
 Included in this directory are programs, features, and tools that were created or edited by our team in the development of *Leo Linux*.
-
 Some of the programs created/edited include:
 
 | # | Name |
