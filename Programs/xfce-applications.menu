@@ -96,6 +96,7 @@
 			<Filename>xfce4-terminal.desktop</Filename>
 			<Filename>xfce4-terminal-settings.desktop</Filename>
 			<Filename>debian-xterm.desktop</Filename>
+			<Filename>lstopo.desktop</Filename>
 			<Merge type="files" />
 		</Layout>
 	</Menu>
@@ -117,10 +118,8 @@
 			<Filename>org.gnome.DiskUtility.desktop</Filename>
 			<Filename>xreader.desktop</Filename>
 			<Filename>exo-file-manager.desktop</Filename>
-			<Filename>nemo.desktop</Filename>
 			<Filename>org.gnome.font-viewer.desktop</Filename>
 			<Filename>gnote.desktop</Filename>
-			<Filename>xviewer.desktop</Filename>
 			<Filename>lightdm-gtk-greeter-settings.desktop</Filename>
 			<Filename>org.gnome.Logs.desktop</Filename>
 			<Filename>mate-calc.desktop</Filename>
@@ -132,7 +131,6 @@
 			<Filename>org.gnome.seahorse.Application.desktop</Filename>
 			<Filename>redshift.desktop</Filename>
 			<Filename>redshift-gtk.desktop</Filename>
-			<Filename>apport-gtk.desktop</Filename>
 			<Filename>xfce4-run.desktop</Filename>
 			<Filename>org.gnome.Screenshot.desktop</Filename>
 			<Filename>xfce4-screenshooter.desktop</Filename>
@@ -173,11 +171,15 @@
 			<Directory>menulibre-information-gathering.directory</Directory>
 			<DirectoryDir>/home/chase/.local/share/desktop-directories</DirectoryDir>
 			<Include>
-				<Filename>menulibre-new-launcher2.desktop</Filename>
+				<Filename>menulibre-dnsmap.desktop</Filename>
+			</Include>
+			<Include>
+				<Filename>menulibre-nmap.desktop</Filename>
 			</Include>
 			<Layout>
 				<Merge type="menus" />
-				<Filename>menulibre-new-launcher2.desktop</Filename>
+				<Filename>menulibre-dnsmap.desktop</Filename>
+				<Filename>menulibre-nmap.desktop</Filename>
 				<Merge type="files" />
 			</Layout>
 		</Menu>
@@ -199,11 +201,15 @@
 			<Directory>menulibre-vulnerability-analysis.directory</Directory>
 			<DirectoryDir>/home/chase/.local/share/desktop-directories</DirectoryDir>
 			<Include>
-				<Filename>menulibre-wireshark.desktop</Filename>
+				<Filename>menulibre-sqlmap.desktop</Filename>
+			</Include>
+			<Include>
+				<Filename>menulibre-wireshark1.desktop</Filename>
 			</Include>
 			<Layout>
 				<Merge type="menus" />
-				<Filename>menulibre-wireshark.desktop</Filename>
+				<Filename>menulibre-sqlmap.desktop</Filename>
+				<Filename>menulibre-wireshark1.desktop</Filename>
 				<Merge type="files" />
 			</Layout>
 		</Menu>
@@ -212,11 +218,15 @@
 			<Directory>menulibre-wireless-attacks.directory</Directory>
 			<DirectoryDir>/home/chase/.local/share/desktop-directories</DirectoryDir>
 			<Include>
-				<Filename>menulibre-sniffer-#1.desktop</Filename>
+				<Filename>menulibre-aircrack-ng.desktop</Filename>
+			</Include>
+			<Include>
+				<Filename>menulibre-burpsuite-(community).desktop</Filename>
 			</Include>
 			<Layout>
 				<Merge type="menus" />
-				<Filename>menulibre-sniffer-#1.desktop</Filename>
+				<Filename>menulibre-aircrack-ng.desktop</Filename>
+				<Filename>menulibre-burpsuite-(community).desktop</Filename>
 				<Merge type="files" />
 			</Layout>
 		</Menu>
@@ -225,10 +235,14 @@
 			<Directory>menulibre-password-cracking.directory</Directory>
 			<DirectoryDir>/home/chase/.local/share/desktop-directories</DirectoryDir>
 			<Include>
+				<Filename>menulibre-hashcat.desktop</Filename>
+			</Include>
+			<Include>
 				<Filename>menulibre-john-the-ripper.desktop</Filename>
 			</Include>
 			<Layout>
 				<Merge type="menus" />
+				<Filename>menulibre-hashcat.desktop</Filename>
 				<Filename>menulibre-john-the-ripper.desktop</Filename>
 				<Merge type="files" />
 			</Layout>
@@ -294,9 +308,6 @@
 		<Include>
 			<Filename>menulibre-new-launcher1.desktop</Filename>
 		</Include>
-		<Include>
-			<Filename>menulibre-burpsuite-dummy.desktop</Filename>
-		</Include>
 		<Layout>
 			<Merge type="menus" />
 			<Menuname>menulibre-information-gathering</Menuname>
@@ -311,7 +322,6 @@
 			<Filename>menulibre-emacs-(gui).desktop</Filename>
 			<Filename>menulibre-python-(v3.desktop</Filename>
 			<Filename>menulibre-new-launcher1.desktop</Filename>
-			<Filename>menulibre-burpsuite-dummy.desktop</Filename>
 			<Merge type="files" />
 		</Layout>
 	</Menu>
@@ -403,6 +413,7 @@
 			<Filename>webapp-manager.desktop</Filename>
 			<Filename>exo-web-browser.desktop</Filename>
 			<Filename>brave-browser.desktop</Filename>
+			<Filename>wireshark.desktop</Filename>
 			<Merge type="files" />
 		</Layout>
 	</Menu>
@@ -414,7 +425,6 @@
 			<Merge type="menus" />
 			<Filename>io.github.celluloid_player.Celluloid.desktop</Filename>
 			<Filename>hypnotix.desktop</Filename>
-			<Filename>mint-meta-codecs.desktop</Filename>
 			<Filename>org.xfce.Parole.desktop</Filename>
 			<Filename>pavucontrol.desktop</Filename>
 			<Filename>rhythmbox.desktop</Filename>
@@ -448,12 +458,6 @@
 		<Directory>xfce-other.directory</Directory>
 		<Include>
 			<Filename>gcr-prompter.desktop</Filename>
-		</Include>
-		<Include>
-			<Filename>nemo-autorun-software.desktop</Filename>
-		</Include>
-		<Include>
-			<Filename>cinnamon-killer-daemon.desktop</Filename>
 		</Include>
 		<Include>
 			<Filename>panel-desktop-handler.desktop</Filename>
@@ -497,8 +501,6 @@
 		<Layout>
 			<Merge type="menus" />
 			<Filename>gcr-prompter.desktop</Filename>
-			<Filename>nemo-autorun-software.desktop</Filename>
-			<Filename>cinnamon-killer-daemon.desktop</Filename>
 			<Filename>panel-desktop-handler.desktop</Filename>
 			<Filename>gnome-disk-image-mounter.desktop</Filename>
 			<Filename>gnome-disk-image-writer.desktop</Filename>
@@ -552,6 +554,7 @@
 			<Filename>debian-uxterm.desktop</Filename>
 			<Filename>xfce4-terminal.desktop</Filename>
 			<Filename>debian-xterm.desktop</Filename>
+			<Filename>lstopo.desktop</Filename>
 			<Merge type="files" />
 		</Layout>
 	</Menu>
