@@ -1,0 +1,9 @@
+#!/bin/sh
+sudo apt install dnsmap -y
+echo
+sudo apt install nmap -y
+echo
+
+echo "Installation Successful"
+
+

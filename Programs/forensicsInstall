@@ -1,0 +1,6 @@
+#!/bin/sh
+sudo apt install autopst -y
+echo
+
+
+echo "Installation Successful"
