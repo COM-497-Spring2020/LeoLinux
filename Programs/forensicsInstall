@@ -1,5 +1,5 @@
 #!/bin/sh
-sudo apt install autopst -y
+sudo apt install autopsy -y
 echo
 
 
