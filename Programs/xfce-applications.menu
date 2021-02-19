@@ -188,11 +188,11 @@
 			<Directory>menulibre-digital-forensics.directory</Directory>
 			<DirectoryDir>/home/chase/.local/share/desktop-directories</DirectoryDir>
 			<Include>
-				<Filename>menulibre-forensics-tool-#1.desktop</Filename>
+				<Filename>menulibre-autopsy.desktop</Filename>
 			</Include>
 			<Layout>
 				<Merge type="menus" />
-				<Filename>menulibre-forensics-tool-#1.desktop</Filename>
+				<Filename>menulibre-autopsy.desktop</Filename>
 				<Merge type="files" />
 			</Layout>
 		</Menu>
@@ -299,14 +299,40 @@
 				<Merge type="files" />
 			</Layout>
 		</Menu>
+		<Menu>
+			<Name>menulibre-installation</Name>
+			<Directory>menulibre-installation.directory</Directory>
+			<DirectoryDir>/home/chase/.local/share/desktop-directories</DirectoryDir>
+			<Include>
+				<Filename>menulibre-information-gathering-install.desktop</Filename>
+			</Include>
+			<Include>
+				<Filename>menulibre-digital-forensics-install.desktop</Filename>
+			</Include>
+			<Include>
+				<Filename>menulibre-vulnerability-analysis-install.desktop</Filename>
+			</Include>
+			<Include>
+				<Filename>menulibre-wireless-attacks-install.desktop</Filename>
+			</Include>
+			<Include>
+				<Filename>menulibre-password-cracking-install.desktop</Filename>
+			</Include>
+			<Layout>
+				<Merge type="menus" />
+				<Filename>menulibre-information-gathering-install.desktop</Filename>
+				<Filename>menulibre-digital-forensics-install.desktop</Filename>
+				<Filename>menulibre-vulnerability-analysis-install.desktop</Filename>
+				<Filename>menulibre-wireless-attacks-install.desktop</Filename>
+				<Filename>menulibre-password-cracking-install.desktop</Filename>
+				<Merge type="files" />
+			</Layout>
+		</Menu>
 		<Include>
 			<Filename>menulibre-emacs-(gui).desktop</Filename>
 		</Include>
 		<Include>
 			<Filename>menulibre-python-(v3.desktop</Filename>
-		</Include>
-		<Include>
-			<Filename>menulibre-new-launcher1.desktop</Filename>
 		</Include>
 		<Layout>
 			<Merge type="menus" />
@@ -319,9 +345,9 @@
 			<Menuname>menulibre-penetration-testing</Menuname>
 			<Menuname>menulibre-hardware-hacking</Menuname>
 			<Menuname>menulibre-reporting-tools</Menuname>
+			<Menuname>menulibre-installation</Menuname>
 			<Filename>menulibre-emacs-(gui).desktop</Filename>
 			<Filename>menulibre-python-(v3.desktop</Filename>
-			<Filename>menulibre-new-launcher1.desktop</Filename>
 			<Merge type="files" />
 		</Layout>
 	</Menu>
@@ -404,7 +430,6 @@
 		<DirectoryDir>/home/chase/.local/share/desktop-directories</DirectoryDir>
 		<Layout>
 			<Merge type="menus" />
-			<Filename>firefox.desktop</Filename>
 			<Filename>io.github.Hexchat.desktop</Filename>
 			<Filename>exo-mail-reader.desktop</Filename>
 			<Filename>pidgin.desktop</Filename>
