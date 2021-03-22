@@ -1,7 +1,18 @@
 #!/bin/sh
-sudo apt install dnsmap -y
+#sudo apt install dnsmap -y
+
+#DNSMAP Install
+echo "net-analyzer/dnsmap ~amd64" >> /etc/portage/package.accept_keywords
+emerge --oneshot net-analyzer/dnsmap
+
 echo
-sudo apt install nmap -y
+
+#sudo apt install nmap -y
+
+#NMAP Install
+#echo "net-analyzer/nmap ~amd64" >> /etc/portage/package.accept_keywords
+#emerge --oneshot net-analyzer/nmap
+
 echo
 
 echo "Installation Successful"
