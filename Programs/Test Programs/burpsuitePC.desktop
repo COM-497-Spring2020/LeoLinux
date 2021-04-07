@@ -1,8 +1,0 @@
-[Desktop Entry]
-Version=1.0
-Type=Application
-Terminal=true
-Exec=/TestPrograms/ForensicTool1
-Name=Forensic Tool #1 Test
-Icon=
-Name[en_US]=forensictool1.desktop
