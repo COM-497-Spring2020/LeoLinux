@@ -1,6 +1,0 @@
-#!/bin/sh
-sudo apt install autopsy -y
-echo
-
-
-echo "Installation Successful"
