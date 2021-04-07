@@ -1,7 +1,0 @@
-#!/bin/sh
-sudo apt install aircrack-ng -y
-echo
-#sudo apt install burpsuite -y
-#echo
-
-echo "Installation Successful"
