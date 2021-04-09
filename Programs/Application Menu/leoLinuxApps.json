@@ -2,90 +2,90 @@
     "Information_Gathering":{
         "DNSMAP":{
             "Name":"DNSMAP",
+            "Package":"net-analyzer/dnsmap",
             "Size":"72 KiB",
-            "Desc":"<html>DNSMAP is mainly meant to be used by pentesters duing the information gathering or enumeration phase of infrastructure security assessments. <br /><br /> For more information%! see: <a href='https://tools.kali.org/information-gathering/dnsmap'> KaliTools.org",
-            "Package":"net-analyzer/dnsmap"
+            "Desc":"<html>DNSMAP is mainly meant to be used by pentesters duing the information gathering or enumeration phase of infrastructure security assessments. <br /><br /> For more information%! see: <a href='https://tools.kali.org/information-gathering/dnsmap'> KaliTools.org"
         },
         "NMAP":{
             "Name":"NMAP",
+            "Package":"net-analyzer/nmap",
             "Size":"60 MB",
-            "Desc":"<html>NMAP (&#x22Network Mapper&#x22) is a free and open source (license) utility for network discovery and security auditing. Many systems and network administrators also find it useful for tasks such as network inventory%! managing service upgrade schedules%! and monitoring host or service uptime. Nmap uses raw IP packets in novel ways to determine what hosts are available on the network%! what services (application name and version) those hosts are offering%! what operating systems (and OS versions) they are running%! what type of packet filters/firewalls are in use%! and dozens of other characteristics. <br /><br /> For more information%! see: <a href='https://tools.kali.org/information-gathering/nmap'> KaliTools.org",
-            "Package":"net-analyzer/nmap"
+            "Desc":"<html>NMAP (&#x22Network Mapper&#x22) is a free and open source (license) utility for network discovery and security auditing. Many systems and network administrators also find it useful for tasks such as network inventory%! managing service upgrade schedules%! and monitoring host or service uptime. Nmap uses raw IP packets in novel ways to determine what hosts are available on the network%! what services (application name and version) those hosts are offering%! what operating systems (and OS versions) they are running%! what type of packet filters/firewalls are in use%! and dozens of other characteristics. <br /><br /> For more information%! see: <a href='https://tools.kali.org/information-gathering/nmap'> KaliTools.org"
         }
     },
 
     "Digital_Forensics":{
         "AUTOPSY":{
             "Name":"AUTOPSY",
+            "Package":"",
             "Size":"123 MB",
-            "Desc":"<html>AUTOPSY is the premier open source forensics platform which is fast%! easy-to-use%! and capable of analyzing all types of mobile devices and digital media. Its plug-in architecture enables extensibility from community-developed or custom-built modules. Autopsy evolves to meet the needs of hundreds of thousands of professionals in law enforcement%! national security%! litigation support^ and corporate investigation. <br /><br /> For more information%! see: <a href='https://www.autopsy.com'> Autopsy.com",
-            "Package":""
+            "Desc":"<html>AUTOPSY is the premier open source forensics platform which is fast%! easy-to-use%! and capable of analyzing all types of mobile devices and digital media. Its plug-in architecture enables extensibility from community-developed or custom-built modules. Autopsy evolves to meet the needs of hundreds of thousands of professionals in law enforcement%! national security%! litigation support^ and corporate investigation. <br /><br /> For more information%! see: <a href='https://www.autopsy.com'> Autopsy.com"
         },
         "RKHUNTER":{
             "Name":"RKHUNTER",
+            "Package":"app-forensics/rkhunter",
             "Size":"123 MB",
-            "Desc":"<html>RKHUNTER is a Unix-based tool that scans for rootkits%! backdoors and possible local exploits. It does this by comparing SHA-1 hashes of important files with known good ones in online databases%! searching for default directories%! wrong permissions%! hidden files%! suspicious strings in kernel modules%! and special tests for Linux and FreeBSD. <br /><br /> For more information%! see: <a href='https://pkg.kali.org/pkg/rkhunter'> Kali.org",
-            "Package":"app-forensics/rkhunter"
+            "Desc":"<html>RKHUNTER is a Unix-based tool that scans for rootkits%! backdoors and possible local exploits. It does this by comparing SHA-1 hashes of important files with known good ones in online databases%! searching for default directories%! wrong permissions%! hidden files%! suspicious strings in kernel modules%! and special tests for Linux and FreeBSD. <br /><br /> For more information%! see: <a href='https://pkg.kali.org/pkg/rkhunter'> Kali.org"
         }
     },
 
     "Password_Cracking":{
         "HASHCAT":{
             "Name":"HASHCAT",
+            "Package":"app-crypt/hashcat",
             "Size":"30.5 MB",
-            "Desc":"<html>HASHCAT is the world's fastest and most advanced password recovery utility%! supporting five unique modes of attack for over 200 highly-optimized hashing algorithms. hashcat currently supports CPUs%! GPUs%! and other hardware accelerators on Linux%! Windows%! and OSX%! and has facilities to help enable distributed password cracking. <br /><br /> For more information%! see: <a href='https://tools.kali.org/password-attacks/hashcat'> KaliTools.org",
-            "Package":"app-crypt/hashcat"
+            "Desc":"<html>HASHCAT is the world's fastest and most advanced password recovery utility%! supporting five unique modes of attack for over 200 highly-optimized hashing algorithms. hashcat currently supports CPUs%! GPUs%! and other hardware accelerators on Linux%! Windows%! and OSX%! and has facilities to help enable distributed password cracking. <br /><br /> For more information%! see: <a href='https://tools.kali.org/password-attacks/hashcat'> KaliTools.org"
         },
         "JOHN THE RIPPER":{
             "Name":"JOHN THE RIPPER",
+            "Package":"app-crypt/johntheripper-jumbo",
             "Size":"33.6 MB",
-            "Desc":"<html>JOHN THE RIPPER is designed to be both feature-rich and fast. It combines several cracking modes in one program and is fully configurable for your particular needs (you can even define a custom cracking mode using the built-in compiler supporting a subset of C). <br /><br /> Out of the box%! John supports (and autodetects) the following Unix crypt(3) hash types: traditional DES-based%! &#x22 bigcrypt &#x22 BSDI extended DES-based%! FreeBSD MD5-based (also used on Linux and in Cisco IOS)%! and OpenBSD Blowfish-based (now also used on some Linux distributions and supported by recent versions of Solaris). Also supported out of the box are Kerberos/AFS and Windows LM (DES-based) hashes%! as well as DES-based tripcodes. <br /><br /> For more information%! see: <a href='https://tools.kali.org/password-attacks/john'> KaliTools.org",
-            "Package":"app-crypt/johntheripper-jumbo"
+            "Desc":"<html>JOHN THE RIPPER is designed to be both feature-rich and fast. It combines several cracking modes in one program and is fully configurable for your particular needs (you can even define a custom cracking mode using the built-in compiler supporting a subset of C). <br /><br /> Out of the box%! John supports (and autodetects) the following Unix crypt(3) hash types: traditional DES-based%! &#x22 bigcrypt &#x22 BSDI extended DES-based%! FreeBSD MD5-based (also used on Linux and in Cisco IOS)%! and OpenBSD Blowfish-based (now also used on some Linux distributions and supported by recent versions of Solaris). Also supported out of the box are Kerberos/AFS and Windows LM (DES-based) hashes%! as well as DES-based tripcodes. <br /><br /> For more information%! see: <a href='https://tools.kali.org/password-attacks/john'> KaliTools.org"
         }
     },
 
     "Vulnerability_Analysis":{
         "NIKTO":{
             "Name":"NIKTO",
+            "Package":"net-analyzer/nikto",
             "Size":"123 MB",
-            "Desc":"<html>NIKTO XXXXXX <br /><br /> For more information%! see: <a href='https://tools.kali.org/vulnerability-analysis/sqlmap'> KaliTools.org",
-            "Package":"net-analyzer/nikto"
+            "Desc":"<html>NIKTO XXXXXX <br /><br /> For more information%! see: <a href='https://tools.kali.org/vulnerability-analysis/sqlmap'> KaliTools.org"
         },
         "WIRESHARK":{
             "Name":"WIRESHARK",
+            "Package":"",
             "Size":"123 MB",
-            "Desc":"<html>WIRESHARK is the world's foremost network protocol analyzer. It lets you see what's happening on your network at a microscopic level. It is the de facto (and often de jure) standard across many industries and educational institutions. Wireshark development thrives thanks to the contributions of networking experts across the globe. It is the continuation of a project that started in 1998. <br /><br /> For more information%! see: <a href='https://tools.kali.org/information-gathering/wireshark'> KaliTools.org",
-            "Package":""
+            "Desc":"<html>WIRESHARK is the world's foremost network protocol analyzer. It lets you see what's happening on your network at a microscopic level. It is the de facto (and often de jure) standard across many industries and educational institutions. Wireshark development thrives thanks to the contributions of networking experts across the globe. It is the continuation of a project that started in 1998. <br /><br /> For more information%! see: <a href='https://tools.kali.org/information-gathering/wireshark'> KaliTools.org"
         }
     }, 
 
     "Wireless_Attacks":{
         "AIRCRACK-NG":{
             "Name":"AIRCRACK-NG",
+            "Package":"net-wireless/aircrack-ng",
             "Size":"123 MB",
-            "Desc":"<html>AIRCRACK-NG is an 802.11 WEP and WPA-PSK keys cracking program that can recover keys once enough data packets have been captured. It implements the standard FMS attack along with some optimizations like KoreK attacks%! as well as the all-new PTW attack%! thus making the attack much faster compared to other WEP cracking tools. <br /><br /> For more information%! see: <a href='https://tools.kali.org/wireless-attacks/aircrack-ng'> KaliTools.org",
-            "Package":"net-wireless/aircrack-ng"
+            "Desc":"<html>AIRCRACK-NG is an 802.11 WEP and WPA-PSK keys cracking program that can recover keys once enough data packets have been captured. It implements the standard FMS attack along with some optimizations like KoreK attacks%! as well as the all-new PTW attack%! thus making the attack much faster compared to other WEP cracking tools. <br /><br /> For more information%! see: <a href='https://tools.kali.org/wireless-attacks/aircrack-ng'> KaliTools.org"
         },
         "BURPSUITE":{
             "Name":"BURPSUITE",
+            "Package":"",
             "Size":"123 MB",
-            "Desc":"<html>BURPSUITE is an integrated platform for performing security testing of web applications. Its various tools work seamlessly together to support the entire testing process%! from initial mapping and analysis of an application's attack surface%! through to finding and exploiting security vulnerabilities. <br /><br /> Burp gives you full control%! letting you combine advanced manual techniques with state-of-the-art automation%! to make your work faster%! more effective%! and more fun. <br /><br /> For more information%! see: <a href='https://tools.kali.org/web-applications/burpsuite'> KaliTools.org",
-            "Package":""
+            "Desc":"<html>BURPSUITE is an integrated platform for performing security testing of web applications. Its various tools work seamlessly together to support the entire testing process%! from initial mapping and analysis of an application's attack surface%! through to finding and exploiting security vulnerabilities. <br /><br /> Burp gives you full control%! letting you combine advanced manual techniques with state-of-the-art automation%! to make your work faster%! more effective%! and more fun. <br /><br /> For more information%! see: <a href='https://tools.kali.org/web-applications/burpsuite'> KaliTools.org"
         }
     },
 
     "OTHER":{
         "BRACKET CHECKER":{
             "Name":"BRACKET CHECKER",
+            "Package":"",
             "Size":"123 MB",
-            "Desc":"BRACKET CHECKER is a tool...",
-            "Package":""
+            "Desc":"BRACKET CHECKER is a tool..."
         },
         "SAMBA":{
             "Name":"SAMBA",
+            "Package":"net-fs/samba",
             "Size":"45.8 MB",
-            "Desc":"<html>SAMBA is the standard Windows interoperability suite of programs for Linux and Unix. <br /><br /> For more information%! see: <a href='https://www.samba.org/'> Samba.org",
-            "Package":"net-fs/samba"
+            "Desc":"<html>SAMBA is the standard Windows interoperability suite of programs for Linux and Unix. <br /><br /> For more information%! see: <a href='https://www.samba.org/'> Samba.org"
         }
     }
 }
