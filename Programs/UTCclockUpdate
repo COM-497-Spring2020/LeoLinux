@@ -1,0 +1,3 @@
+#!/bin/sh
+
+ntpdate -b -u 0.gentoo.pool.ntp.org
