@@ -1,6 +1,8 @@
 
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
+import java.io.File;
 
 import java.awt.event.*;
 import javax.swing.AbstractButton;
@@ -18,6 +20,8 @@ import org.json.simple.JSONObject;
 import org.json.simple.parser.*;
 import java.util.Map;
 import java.util.Iterator;
+
+/**** Internet Pull Imports ****/
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -28,6 +32,7 @@ import java.net.URL;
  * @author Chase Franse
  */
 
+@SuppressWarnings({ "unused", "serial" })
 public class LeoLinuxJFramev1 extends javax.swing.JFrame {
 
     /**
@@ -87,6 +92,7 @@ public class LeoLinuxJFramev1 extends javax.swing.JFrame {
 			
 			try {
 				obj = (JSONObject) parser.parse(data);
+				//System.out.println(obj);
 			} catch (ParseException e) {
 				e.printStackTrace();
 			} 
@@ -96,7 +102,8 @@ public class LeoLinuxJFramev1 extends javax.swing.JFrame {
 		return obj;
 	}
     
-    public int count(Map.Entry pair, int counter, String currentKey) {
+    @SuppressWarnings("rawtypes")
+	public int count(Map.Entry pair, int counter, String currentKey) {
     	String thisKey = pair.getKey().toString();
 		if (thisKey != currentKey) {
 			counter++;
@@ -111,13 +118,14 @@ public class LeoLinuxJFramev1 extends javax.swing.JFrame {
     String currentSize = "";
     String currentDesc = "";
 	int counter = 0;
-    String[] VALUES = new String[(counter)];
+    String[] VALUES = new String[(counter*2)];
     
     /*
      * JSON Reading
      */
     
-    public void JSONReading(/*Object obj*/) throws Exception{
+    @SuppressWarnings({ "rawtypes", "unchecked" })
+	public void JSONReading() throws Exception{
     	
     	// Collecting the .JSON from GitHub
     			JSONObject jo = new JSONObject();
@@ -175,7 +183,7 @@ public class LeoLinuxJFramev1 extends javax.swing.JFrame {
     			 */
     			
     			String Keys[] = new String[counter];
-    			String Values[] = new String[(counter * 3)];
+    			String Values[] = new String[(counter * 4)];
     			
     			int Kcounter = 0;
     			int Vcounter = 0;
@@ -187,7 +195,7 @@ public class LeoLinuxJFramev1 extends javax.swing.JFrame {
     				//System.out.println(pair.getKey() + " : " + pair.getValue());
     				
     				String key = pair.getKey().toString();
-    				String values[] = new String[3];
+    				String values[] = new String[4];
     				values = pair.getValue().toString().split(",");
     				if(Keys[Kcounter] == null) {
     					Keys[Kcounter] = key;
@@ -207,7 +215,7 @@ public class LeoLinuxJFramev1 extends javax.swing.JFrame {
     				//System.out.println(pair.getKey() + " : " + pair.getValue());
 
     				String key = pair.getKey().toString();
-    				String values[] = new String[3];
+    				String values[] = new String[4];
     				values = pair.getValue().toString().split(",");
     				if(Keys[Kcounter] == null) {
     					Keys[Kcounter] = key;
@@ -226,7 +234,7 @@ public class LeoLinuxJFramev1 extends javax.swing.JFrame {
     				//System.out.println(pair.getKey() + " : " + pair.getValue());
 
     				String key = pair.getKey().toString();
-    				String values[] = new String[3];
+    				String values[] = new String[4];
     				values = pair.getValue().toString().split(",");
     				if(Keys[Kcounter] == null) {
     					Keys[Kcounter] = key;
@@ -245,7 +253,7 @@ public class LeoLinuxJFramev1 extends javax.swing.JFrame {
     				//System.out.println(pair.getKey() + " : " + pair.getValue());
 
     				String key = pair.getKey().toString();
-    				String values[] = new String[3];
+    				String values[] = new String[4];
     				values = pair.getValue().toString().split(",");
     				if(Keys[Kcounter] == null) {
     					Keys[Kcounter] = key;
@@ -264,7 +272,7 @@ public class LeoLinuxJFramev1 extends javax.swing.JFrame {
     				//System.out.println(pair.getKey() + " : " + pair.getValue());
 
     				String key = pair.getKey().toString();
-    				String values[] = new String[3];
+    				String values[] = new String[4];
     				values = pair.getValue().toString().split(",");
     				if(Keys[Kcounter] == null) {
     					Keys[Kcounter] = key;
@@ -283,7 +291,7 @@ public class LeoLinuxJFramev1 extends javax.swing.JFrame {
     				//System.out.println(pair.getKey() + " : " + pair.getValue());
 
     				String key = pair.getKey().toString();
-    				String values[] = new String[3];
+    				String values[] = new String[4];
     				values = pair.getValue().toString().split(",");
     				if(Keys[Kcounter] == null) {
     					Keys[Kcounter] = key;
@@ -298,7 +306,7 @@ public class LeoLinuxJFramev1 extends javax.swing.JFrame {
     			
     			
     			// Clean up the Values Array Items [Name Section]
-    			for(int e = 2; e < Values.length; e+=3) {
+    			for(int e = 3; e < Values.length; e+=4) {
     				Values[e] = Values[e].substring(8);
     				
     				String string = Values[e];
@@ -313,9 +321,26 @@ public class LeoLinuxJFramev1 extends javax.swing.JFrame {
     				//System.out.println(Values[e]);
     			} 
     			
+    			// Clean up the Values Array Items [Package Section]
+    			for(int e = 2; e < Values.length; e+=4) {
+    				Values[e] = Values[e].substring(11);
+    				
+    				String string = Values[e];
+    				String reverse = new StringBuffer(string).reverse().toString();
+    				Values[e] = reverse;
+    				Values[e] = Values[e].substring(1);
+    				
+    				string = Values[e];
+    				String correct = new StringBuffer(string).reverse().toString();
+    				Values[e] = correct;
+    				
+    				Values[e] = Values[e].replace("\\/", "/");
+    				
+    				//System.out.println(Values[e]);
+    			}
     			
     			// Clean up the Values Array Items [Size Section]
-    			for(int e = 1; e < Values.length; e+=3) {
+    			for(int e = 1; e < Values.length; e+=4) {
     				Values[e] = Values[e].substring(8);
     				
     				String string = Values[e];
@@ -331,7 +356,7 @@ public class LeoLinuxJFramev1 extends javax.swing.JFrame {
     			} 
     			
     			// Clean up the Values Array Items [Desc Section]
-    			for(int e = 0; e < Values.length; e+=3) {
+    			for(int e = 0; e < Values.length; e+=4) {
     				Values[e] = Values[e].substring(9);
     				
     				String string = Values[e];
@@ -361,7 +386,7 @@ public class LeoLinuxJFramev1 extends javax.swing.JFrame {
     			/**
     			 * Add Menu Items
     			 */
-    			addMenuItem(Keys, Values, jo);			
+    			addMenuItem(Keys, Values, jo);  			
     }
     
     /**
@@ -378,10 +403,19 @@ public class LeoLinuxJFramev1 extends javax.swing.JFrame {
 		while(nameTxt != VALUES[i]) {
 			i++;
 		}
-		jLabel3.setText(VALUES[(i-1)]); //Size
+		jLabel3.setText(VALUES[(i-2)]); //Size
 		// Modify description VALUE position to replace "%" with "," JUST BEFORE setting the text
-		VALUES[(i-2)] = VALUES[(i-2)].replace("%!", ",");
-		jLabel4.setText(VALUES[(i-2)]); //Desc
+		VALUES[(i-3)] = VALUES[(i-3)].replace("%!", ",");
+		jLabel4.setText(VALUES[(i-3)]); //Desc
+		
+		//Set "INSTALL" button scripts to correct package
+		//System.out.println("Name: " + nameTxt + "\nPackage: " + VALUES[i-1]);
+		
+		try {
+			createScript(VALUES[i-1]);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 	}
 	
     /**
@@ -395,14 +429,13 @@ public class LeoLinuxJFramev1 extends javax.swing.JFrame {
     		 */
     		if(jo.get("Information_Gathering").toString().contains(Keys[e]) == true) {
     			//System.out.println("INFO GATHERING @" + e);
-    			for(int i = 2; i < Values.length; i+=3) {  
+    			for(int i = 3; i < Values.length; i+=4) {  
     				if(Keys[e].toString().contains(Values[i])) {
 	    				JMenuItem menuItem = new JMenuItem(Values[i].toString());
 	    				jMenu1.add(menuItem);
 	    				menuItem.addActionListener(new ActionListener() {
 	    					public void actionPerformed(ActionEvent evt) {
 	    						tabAction(evt);
-	    						
 	    					}
 	    				});
     				}
@@ -413,7 +446,7 @@ public class LeoLinuxJFramev1 extends javax.swing.JFrame {
     		 */
     		else if (jo.get("Digital_Forensics").toString().contains(Keys[e]) == true) {
     			//System.out.println("DIGITAL FORENSICS @" + e);
-    			for(int i = 2; i < Values.length; i+=3) {  
+    			for(int i = 3; i < Values.length; i+=4) {  
     				if(Keys[e].toString().contains(Values[i])) {
 	    				JMenuItem menuItem = new JMenuItem(Values[i].toString());
 	    				jMenu2.add(menuItem);
@@ -430,7 +463,7 @@ public class LeoLinuxJFramev1 extends javax.swing.JFrame {
     		 */
     		else if (jo.get("Password_Cracking").toString().contains(Keys[e]) == true) {
     			//System.out.println("PASSWORD CRACKING @" + e);
-    			for(int i = 2; i < Values.length; i+=3) {  
+    			for(int i = 3; i < Values.length; i+=4) {  
     				if(Keys[e].toString().contains(Values[i])) {
 	    				JMenuItem menuItem = new JMenuItem(Values[i].toString());
 	    				jMenu5.add(menuItem);
@@ -447,7 +480,7 @@ public class LeoLinuxJFramev1 extends javax.swing.JFrame {
     		 */
     		else if (jo.get("Vulnerability_Analysis").toString().contains(Keys[e]) == true) {
     			//System.out.println("VULNERABILITY ANALYSIS @" + e);
-    			for(int i = 2; i < Values.length; i+=3) {  
+    			for(int i = 3; i < Values.length; i+=4) {  
     				if(Keys[e].toString().contains(Values[i])) {
 	    				JMenuItem menuItem = new JMenuItem(Values[i].toString());
 	    				jMenu3.add(menuItem);
@@ -464,7 +497,7 @@ public class LeoLinuxJFramev1 extends javax.swing.JFrame {
     		 */
     		else if (jo.get("Wireless_Attacks").toString().contains(Keys[e]) == true) {
     			//System.out.println("WIRELESS ATTACKS @" + e);
-    			for(int i = 2; i < Values.length; i+=3) {  
+    			for(int i = 3; i < Values.length; i+=4) {  
     				if(Keys[e].toString().contains(Values[i])) {
 	    				JMenuItem menuItem = new JMenuItem(Values[i].toString());
 	    				jMenu4.add(menuItem);
@@ -481,7 +514,7 @@ public class LeoLinuxJFramev1 extends javax.swing.JFrame {
     		 */
     		else if (jo.get("OTHER").toString().contains(Keys[e]) == true) {
     			//System.out.println("OTHER @" + e);
-    			for(int i = 2; i < Values.length; i+=3) {  
+    			for(int i = 3; i < Values.length; i+=4) {  
     				if(Keys[e].toString().contains(Values[i])) {
 	    				JMenuItem menuItem = new JMenuItem(Values[i].toString());
 	    				jMenu6.add(menuItem);
@@ -498,6 +531,23 @@ public class LeoLinuxJFramev1 extends javax.swing.JFrame {
 
     	} 
     }
+    
+    /**
+     * Function to Create a file on system
+     */
+    public static void createScript(String PACKAGE) throws IOException {
+    	File shellScript = new File("installer.sh");
+    	
+    	FileWriter shellWriter = new FileWriter("installer.sh");
+    	shellWriter.write("#!/bin/sh \n\n");
+    	shellWriter.write("echo \"" + PACKAGE + " ~amd64\" >> /etc/portage/package.accept_keywords \n");
+    	shellWriter.write("emerge " + PACKAGE);
+    	shellWriter.close();
+    	
+    	ProcessBuilder permissionGranter = new ProcessBuilder();
+    	permissionGranter.command("/.leolinuxcustom/programs/permissionGranter.sh");
+    	Process permissionProcess = permissionGranter.start();
+    }
 
 
     /**
@@ -505,7 +555,7 @@ public class LeoLinuxJFramev1 extends javax.swing.JFrame {
      * WARNING: Do NOT modify this code. The content of this method is always
      * regenerated by the Form Editor.
      */
-    @SuppressWarnings("unchecked")
+    
     // <editor-fold defaultstate="collapsed" desc="Generated Code">                          
     private void initComponents() {
 
@@ -651,12 +701,13 @@ public class LeoLinuxJFramev1 extends javax.swing.JFrame {
     /*
      * When pressed, the INSTALL button should run the "installer.sh" file located in: "/.leolinuxcustom/programs", and run the desired install command.
      */
-    // TODO - CREATE AND CORRECT INSTALLER BUTTON FUNCTION!
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {                                         
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {
         ProcessBuilder install = new ProcessBuilder();
-        install.command("/.leolinuxcustom/programs/test.sh");
+        install.command("/.leolinuxcustom/programs/installer.sh");
+        
         try{
             Process installProcess = install.start();
+            JOptionPane.showMessageDialog(rootPane, "Program Installing. Please run program in a few minutes.");
         } catch (IOException e){
             JOptionPane.showMessageDialog(rootPane, "Error Occured!");
             JOptionPane.showMessageDialog(rootPane, e);
@@ -699,7 +750,6 @@ public class LeoLinuxJFramev1 extends javax.swing.JFrame {
 				} catch (Exception e) {
 					e.printStackTrace();
 				} catch (Throwable e) {
-					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
             }
