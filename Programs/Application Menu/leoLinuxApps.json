@@ -79,7 +79,7 @@
             "Name":"BRACKET CHECKER",
             "Package":"",
             "Size":"123 MB",
-            "Desc":"BRACKET CHECKER is a tool ...."
+            "Desc":"<html>BRACKET CHECKER is a tool written by Chase Franse that searches through any given text or programming file and searches for pairs of brackets. These brackets include: (, [, {, }, ], )."
         },
         "SAMBA":{
             "Name":"SAMBA",
