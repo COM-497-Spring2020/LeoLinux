@@ -19,7 +19,7 @@
             "Name":"AUTOPSY",
             "Package":"app-forensics/autopsy",
             "Size":"1.3 GB",
-            "Desc":"<html>AUTOPSY is the premier open source forensics platform which is fast%! easy-to-use%! and capable of analyzing all types of mobile devices and digital media. Its plug-in architecture enables extensibility from community-developed or custom-built modules. Autopsy evolves to meet the needs of hundreds of thousands of professionals in law enforcement%! national security%! litigation support^ and corporate investigation. As Linux continues to update%! this application is one of a select few that may or may not install correctly. If this install fails%! please visit the <a href='https://www.autopsy.com/download/'> Autopsy Download Page </a> and try to install there. <br /><br /> For more information%! see: <a href='https://www.autopsy.com'> Autopsy.com"
+            "Desc":"<html>AUTOPSY is the premier open source forensics platform which is fast%! easy-to-use%! and capable of analyzing all types of mobile devices and digital media. Its plug-in architecture enables extensibility from community-developed or custom-built modules. Autopsy evolves to meet the needs of hundreds of thousands of professionals in law enforcement%! national security%! litigation support^ and corporate investigation. As Linux continues to update%! this application is one of a select few that may or may not install correctly. If this install fails%! please visit the <a href='https://www.autopsy.com/download/'> Autopsy Download Page </a> and try to install from there. <br /><br /> For more information%! see: <a href='https://www.autopsy.com'> Autopsy.com"
         },
         "RKHUNTER":{
             "Name":"RKHUNTER",
@@ -53,9 +53,9 @@
         },
         "WIRESHARK":{
             "Name":"WIRESHARK",
-            "Package":"",
-            "Size":"123 MB",
-            "Desc":"<html>WIRESHARK is the world's foremost network protocol analyzer. It lets you see what's happening on your network at a microscopic level. It is the de facto (and often de jure) standard across many industries and educational institutions. Wireshark development thrives thanks to the contributions of networking experts across the globe. It is the continuation of a project that started in 1998. <br /><br /> For more information%! see: <a href='https://tools.kali.org/information-gathering/wireshark'> KaliTools.org"
+            "Package":"net-analyzer/wireshark",
+            "Size":"30.8 MB",
+            "Desc":"<html>WIRESHARK is the world's foremost network protocol analyzer. It lets you see what's happening on your network at a microscopic level. It is the de facto (and often de jure) standard across many industries and educational institutions. Wireshark development thrives thanks to the contributions of networking experts across the globe. It is the continuation of a project that started in 1998. As Linux continues to update%! this application is one of a select few that may or may not install correctly. If this install fails%! please visit the <a href='https://www.wireshark.org/#download'> Wireshark Download Page </a> and try to install from there. <br /><br /> For more information%! see: <a href='https://tools.kali.org/information-gathering/wireshark'> KaliTools.org"
         }
     }, 
 
