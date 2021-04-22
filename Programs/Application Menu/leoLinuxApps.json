@@ -79,7 +79,7 @@
             "Name":"BRACKET CHECKER",
             "Package":"",
             "Size":"ALREADY INSTALLED",
-            "Desc":"<html>BRACKET CHECKER is a tool written by Chase Franse that searches through any given text or programming file and searches for pairs of brackets. These brackets include: (%! [%! {%! }%! ]%! ). <br /> <br /> This application is already installed on this system - use the \"Application Selector\" menu to open the program."
+            "Desc":"<html>BRACKET CHECKER is a tool written by Chase Franse that searches through any given text or programming file and searches for pairs of brackets. These brackets include: (%! [%! {%! }%! ]%! ). <br /> <br /> This application is already installed on this system - use the 'Application Selector' menu to open the program."
         },
         "SAMBA":{
             "Name":"SAMBA",
