@@ -34,7 +34,7 @@
             "Name":"HASHCAT",
             "Package":"app-crypt/hashcat",
             "Size":"30.5 MB",
-            "Desc":"<html>HASHCAT is the world's fastest and most advanced password recovery utility%! supporting five unique modes of attack for over 200 highly-optimized hashing algorithms. hashcat currently supports CPUs%! GPUs%! and other hardware accelerators on Linux%! Windows%! and OSX%! and has facilities to help enable distributed password cracking. <br /><br /> For more information%! see: <a href='https://tools.kali.org/password-attacks/hashcat'> KaliTools.org"
+            "Desc":"<html>HASHCAT is the world\'s fastest and most advanced password recovery utility%! supporting five unique modes of attack for over 200 highly-optimized hashing algorithms. hashcat currently supports CPUs%! GPUs%! and other hardware accelerators on Linux%! Windows%! and OSX%! and has facilities to help enable distributed password cracking. <br /><br /> For more information%! see: <a href='https://tools.kali.org/password-attacks/hashcat'> KaliTools.org"
         },
         "JOHN THE RIPPER":{
             "Name":"JOHN THE RIPPER",
@@ -55,7 +55,7 @@
             "Name":"WIRESHARK",
             "Package":"",
             "Size":"30.8 MB",
-            "Desc":"<html>WIRESHARK is the world's foremost network protocol analyzer. It lets you see what's happening on your network at a microscopic level. It is the de facto (and often de jure) standard across many industries and educational institutions. Wireshark development thrives thanks to the contributions of networking experts across the globe. It is the continuation of a project that started in 1998. As Linux continues to update%! this application is one of a select few that may or may not install correctly. If this install fails%! please visit the Wireshark Download bage (below) and try to install it from there. <br /><br /> <a href='https://www.wireshark.org/#download'> Wireshark Download Page <br /><br /> For more information%! see: <a href='https://tools.kali.org/information-gathering/wireshark'> KaliTools.org"
+            "Desc":"<html>WIRESHARK is the world\'s foremost network protocol analyzer. It lets you see what's happening on your network at a microscopic level. It is the de facto (and often de jure) standard across many industries and educational institutions. Wireshark development thrives thanks to the contributions of networking experts across the globe. It is the continuation of a project that started in 1998. As Linux continues to update%! this application is one of a select few that may or may not install correctly. If this install fails%! please visit the Wireshark Download bage (below) and try to install it from there. <br /><br /> <a href='https://www.wireshark.org/#download'> Wireshark Download Page <br /><br /> For more information%! see: <a href='https://tools.kali.org/information-gathering/wireshark'> KaliTools.org"
         }
     }, 
 
@@ -70,7 +70,7 @@
             "Name":"BURPSUITE",
             "Package":"",
             "Size":"2.6 GB",
-            "Desc":"<html>BURPSUITE is an integrated platform for performing security testing of web applications. Its various tools work seamlessly together to support the entire testing process%! from initial mapping and analysis of an application's attack surface%! through to finding and exploiting security vulnerabilities. <br /><br /> Burp gives you full control%! letting you combine advanced manual techniques with state-of-the-art automation%! to make your work faster%! more effective%! and more fun. As Linux continues to update%! this application is one of a select few that may or may not install correctly. If this install fails%! please visit the Burpsuite Home bage (below) and try to install it from there. <br /><br /> <a href='https://portswigger.net/burp'> Burpsuite Home Page <br /><br /> For more information%! see: <a href='https://tools.kali.org/web-applications/burpsuite'> KaliTools.org"
+            "Desc":"<html>BURPSUITE is an integrated platform for performing security testing of web applications. Its various tools work seamlessly together to support the entire testing process%! from initial mapping and analysis of an application\'s attack surface%! through to finding and exploiting security vulnerabilities. <br /><br /> Burp gives you full control%! letting you combine advanced manual techniques with state-of-the-art automation%! to make your work faster%! more effective%! and more fun. As Linux continues to update%! this application is one of a select few that may or may not install correctly. If this install fails%! please visit the Burpsuite Home bage (below) and try to install it from there. <br /><br /> <a href='https://portswigger.net/burp'> Burpsuite Home Page <br /><br /> For more information%! see: <a href='https://tools.kali.org/web-applications/burpsuite'> KaliTools.org"
         }
     },
 
@@ -79,7 +79,7 @@
             "Name":"BRACKET CHECKER",
             "Package":"",
             "Size":"123 MB",
-            "Desc":"<html>BRACKET CHECKER is a tool written by Chase Franse that searches through any given text or programming file and searches for pairs of brackets. These brackets include: (%! [%! {%! }%! ]%! )."
+            "Desc":"<html>BRACKET CHECKER is a tool written by Chase Franse that searches through any given text or programming file and searches for pairs of brackets. These brackets include: (%! [%! {%! }%! ]%! ). <br /> <br /> This application is already installed on this system - use the \"Application Selector\" menu to open the program."
         },
         "SAMBA":{
             "Name":"SAMBA",
