@@ -17,9 +17,9 @@
     "Digital_Forensics":{
         "AUTOPSY":{
             "Name":"AUTOPSY",
-            "Package":"",
+            "Package":"app-forensics/autopsy",
             "Size":"123 MB",
-            "Desc":"<html>AUTOPSY is the premier open source forensics platform which is fast%! easy-to-use%! and capable of analyzing all types of mobile devices and digital media. Its plug-in architecture enables extensibility from community-developed or custom-built modules. Autopsy evolves to meet the needs of hundreds of thousands of professionals in law enforcement%! national security%! litigation support^ and corporate investigation. <br /><br /> For more information%! see: <a href='https://www.autopsy.com'> Autopsy.com"
+            "Desc":"<html>AUTOPSY is the premier open source forensics platform which is fast%! easy-to-use%! and capable of analyzing all types of mobile devices and digital media. Its plug-in architecture enables extensibility from community-developed or custom-built modules. Autopsy evolves to meet the needs of hundreds of thousands of professionals in law enforcement%! national security%! litigation support^ and corporate investigation. As Linux continues to update%! this application is one of a select few that may or may not install correctly. If this install fails%! please visit the <a href='https://www.autopsy.com/download/'> Autopsy Download Page </a> and try to install there. <br /><br /> For more information%! see: <a href='https://www.autopsy.com'> Autopsy.com"
         },
         "RKHUNTER":{
             "Name":"RKHUNTER",
