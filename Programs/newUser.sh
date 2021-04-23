@@ -10,9 +10,19 @@ echo " "
 sudo useradd $name
 sudo usermod -aG sudo $name
 
-echo "Password for $name: "
-sudo passwd $name
+read -p "Do You Want to Add a Password for $name (Y/N)?" passwordQ
 echo " "
+
+if [ $passwordQ == "Y" ]
+then
+	echo "Password for $name: "
+	sudo passwd $name
+	echo " "
+else
+	echo "Setting User \"$name\" Without Password"
+	sudo passwd -d -u $name
+	echo " "
+fi
 
 echo "SETTING HOME DIRECTORIES"
 #home = "/home/$name"
