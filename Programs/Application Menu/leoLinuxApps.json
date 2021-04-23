@@ -4,7 +4,7 @@
             "Name":"DNSMAP",
             "Package":"net-analyzer/dnsmap",
             "Size":"72 KiB",
-            "Desc":"<html>DNSMAP is mainly meant to be used by pentesters duing the information gathering or enumeration phase of infrastructure security assessments. <br /><br /> For more information%! see: <a href='https://tools.kali.org/information-gathering/dnsmap'> KaliTools.org"
+            "Desc":"<html>DNSMAP is mainly meant to be used by pentesters during the information gathering or enumeration phase of infrastructure security assessments. <br /><br /> For more information%! see: <a href='https://tools.kali.org/information-gathering/dnsmap'> KaliTools.org"
         },
         "NMAP":{
             "Name":"NMAP",
