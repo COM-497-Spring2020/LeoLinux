@@ -86,6 +86,18 @@
             "Package":"net-fs/samba",
             "Size":"45.8 MB",
             "Desc":"<html>SAMBA is the standard Windows interoperability suite of programs for Linux and Unix. <br /><br /> For more information%! see: <a href='https://www.samba.org/'> Samba.org"
+        },
+        "NOTEPADQQ":{
+            "Name":"NOTEPADQQ",
+            "Package":"app-editors/notepadqq"
+            "Size":"123 MB:,
+            "Desc":"<html>NOTEPADQQ is a tool ..."
+        },
+        "SUBLIME-TEXT":{
+            "Name":"SUBLIME-TEXT",
+            "Package":"app-editors/sublime-text",
+            "Size":"123 MB",
+            "Desc":"<html>SUBLIME-TEXT is a tool ..."
         }
     }
 }
