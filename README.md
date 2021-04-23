@@ -9,4 +9,6 @@ Additionally, our team ran a survey on students from *Saint Leo University*, as 
 
 There are additional directories, documentation, and historical information available in this Git for project documentation purposes. Information on the development of the GUI can be found in the **Potential GUIs** directory. Additionally, programs that our team has either created or edited can be found in the **Programs** directory.
 
+**If you are interested in downloading a copy of *Leo Linux* for yourself, please see the** Versions **directory and download the version you would like. *Note:* For the first full intended release of *Leo Linux*, please download version 7.0 and IMPORT into VirtualBox. More instructions can be found in the** Versions **directory.**
+
 For more information, please read our *Project Proposal* in the **Documentation** directory of this repositorty, as well as the "*README.md*" files that can be found in the majority of the other directories. Thank you for your interest in *Leo Linux*!
