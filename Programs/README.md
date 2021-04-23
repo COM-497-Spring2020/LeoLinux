@@ -7,7 +7,6 @@ Some of the programs created/edited include:
 | 1 | Project_v5_EXE.java |
 | 2 | Project_v5_EXE_Compilation_Version.java |
 | 3 | Bracket-Checker-5.7.jar |
-| 4 | xfce-applications.menu |
 
 
 ## Project_v5_EXE.java
@@ -23,5 +22,3 @@ package Bracket_Checker.Project_v5_EXE.src.main.java.com.chaseFranse.app;
 ## Bracket-Checker-5.7.jar
 Unlike the previous .JAVA files, this is the compiled version of the "*Project_v5_EXE_Compilation_Version.java*" file. This .JAR file is both executable, and has completely hidden source code; this means that it can safely be used in a Linux distribution meant for students (even Saint Leo University students) without providing said students any answers to the final project of the COM 301 course. This executable file is included in the current version of *Leo Linux* under the name ``Bracket Checker v5.7``. ___This program was implemented in "Leo Linux" version 1.2.___
 
-## xfce-applications.menu
-This file is unlike any of the previous ones. This is the modified ``.menu`` file from the *Linux Mint* based Xfce GUI our team has been modifiying to create *Leo Linux* verion 1.2. This file will continue to change and get larger as more programs, features, and tools are created and imported into newer versions of *Leo Linux*.
