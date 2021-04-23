@@ -1,5 +1,11 @@
 #!/bin/sh
 
+#Update Local Clock to UTC Standards
+echo "Setting Clock to UTC Time"
+echo "Please Be Patient..."
+ntpdate -b -u 0.gentoo.pool.ntp.org
+echo " "
+
 echo "SET LOCAL TIME SEQUENCE"
 
 if [ -e /etc/adjtime ]
