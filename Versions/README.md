@@ -7,4 +7,4 @@ Included in this directory are links to different versions of our *LeoLinux* pro
 | 1.7 | *LinuxMint* Core | 7.84 GB (VirtualBox Export) | https://emailsaintleo-my.sharepoint.com/:f:/g/personal/chase_franse_saintleo_edu/Er4uiHl_qHhCkxPznihZaTEBR9tVWBCZUgCS_gya-bj_Ng?e=eWzlfA |
 | 2.8 | *Ubuntu* Server Core | 2.32 GB (VirtualBox Export) | https://emailsaintleo-my.sharepoint.com/:f:/g/personal/chase_franse_saintleo_edu/EtnK8ZiLlA5Dup9OoOE3aHsBn53HzdiLJkTqfciKg8lv-g?e=vcAKWL |
 | 3.0 | *LeoLinux* (Functional Kernel, not DE) | 10.00 GB (VirtualBox Export) | --- |
-| 3.2 | *LeoLinux* (Gentoo Core) Release #1 | 10.6 GB | X |
+| 7.0 | *LeoLinux* (Gentoo Core) Release #1 | 10.6 GB | X |
