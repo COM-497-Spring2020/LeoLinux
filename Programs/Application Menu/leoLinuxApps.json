@@ -11,12 +11,6 @@
             "Package":"net-analyzer/nmap",
             "Size":"60 MB",
             "Desc":"<html>NMAP (&#x22Network Mapper&#x22) is a free and open source (license) utility for network discovery and security auditing. Many systems and network administrators also find it useful for tasks such as network inventory%! managing service upgrade schedules%! and monitoring host or service uptime. Nmap uses raw IP packets in novel ways to determine what hosts are available on the network%! what services (application name and version) those hosts are offering%! what operating systems (and OS versions) they are running%! what type of packet filters/firewalls are in use%! and dozens of other characteristics. <br /><br /> For more information%! see: <a href='https://tools.kali.org/information-gathering/nmap'> KaliTools.org"
-        },
-        "SUBLIME-TEXT":{
-            "Name":"SUBLIME-TEXT",
-            "Package":"app-editors/sublime-text",
-            "Size":"123 MB",
-            "Desc":"<html>SUBLIME-TEXT is a tool ..."
         }
     },
 
@@ -98,6 +92,12 @@
             "Package":"app-editors/notepadqq",
             "Size":"123 MB",
             "Desc":"<html>NOTEPADQQ is a tool ..."
+        },
+        "SUBLIME-TEXT":{
+            "Name":"SUBLIME-TEXT",
+            "Package":"app-editors/sublime-text",
+            "Size":"123 MB",
+            "Desc":"<html>SUBLIME-TEXT is a tool ..."
         }
     }
 }
